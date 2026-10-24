@@ -3,6 +3,7 @@
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/controlador/Manejador.java
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/entidad/Alumno.java
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/entidad/Carrera.java
+/home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/entidad/Docente.java
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/entidad/Examen.java
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/entidad/ExamenPK.java
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/entidad/Facultad.java
@@ -10,6 +11,7 @@
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/sesion/AbstractFacade.java
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/sesion/AlumnoFacade.java
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/sesion/CarreraFacade.java
+/home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/sesion/DocenteFacade.java
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/sesion/ExamenFacade.java
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/sesion/FacultadFacade.java
 /home/javierrojas/Facultad/desarrollo-backend3/persistencia/appAlumnos/src/main/java/sesion/MateriaFacade.java

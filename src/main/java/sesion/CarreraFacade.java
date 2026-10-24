@@ -4,6 +4,7 @@ import entidad.Carrera;
 import jakarta.ejb.Stateless;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import java.util.List;
 
 /**
  *
@@ -30,5 +31,14 @@ public class CarreraFacade extends AbstractFacade<Carrera> {
                 "SELECT COUNT(a) FROM Alumno a WHERE a.carreraIdcarrera.idcarrera = :id", Long.class)
                 .setParameter("id", idcarrera)
                 .getSingleResult();
+    }
+
+    /** Práctico 4 - Ejercicio 2: carreras de la facultad elegida. */
+    public List<Carrera> listarPorFacultad(Integer idfacultad) {
+        return em.createQuery(
+                "SELECT c FROM Carrera c WHERE c.facultadIdfacultad.idfacultad = :id ORDER BY c.nombre",
+                Carrera.class)
+                .setParameter("id", idfacultad)
+                .getResultList();
     }
 }

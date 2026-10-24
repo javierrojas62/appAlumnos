@@ -10,6 +10,13 @@
     <h1>Materias</h1>
     <a href="index.jsp">Inicio</a> | <a href="NuevaMateria">Agregar materia</a>
     <hr>
+
+    <%-- Mensaje de error (por ejemplo, al intentar borrar una materia con docentes) --%>
+    <c:if test="${not empty sessionScope.error}">
+        <p style="color:red"><b>${sessionScope.error}</b></p>
+        <c:remove var="error" scope="session"/>
+    </c:if>
+
     <table border="1">
         <tr><th>ID</th><th>Nombre</th><th>Acciones</th></tr>
         <c:forEach var="m" items="${materias}">

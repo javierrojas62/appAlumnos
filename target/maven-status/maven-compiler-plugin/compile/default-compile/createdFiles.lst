@@ -8,6 +8,8 @@ sesion/AlumnoFacade.class
 controlador/Manejador.class
 sesion/FacultadFacade.class
 sesion/ExamenFacade.class
+sesion/DocenteFacade.class
+entidad/Docente.class
 sesion/AbstractFacade.class
 entidad/ExamenPK.class
 entidad/Alumno.class

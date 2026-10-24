@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package sesion;
 
 import entidad.Materia;
@@ -27,5 +23,12 @@ public class MateriaFacade extends AbstractFacade<Materia> {
     public MateriaFacade() {
         super(Materia.class);
     }
-    
+
+    /** Cantidad de docentes asignados a la materia (consulta JPQL). */
+    public long cantidadDocentes(Integer idmateria) {
+        return em.createQuery(
+                "SELECT COUNT(d) FROM Docente d JOIN d.materiaCollection m WHERE m.idmateria = :id", Long.class)
+                .setParameter("id", idmateria)
+                .getSingleResult();
+    }
 }

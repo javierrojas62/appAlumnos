@@ -11,6 +11,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.NamedQueries;
 import jakarta.persistence.NamedQuery;
 import jakarta.persistence.OneToMany;
@@ -42,6 +43,9 @@ public class Materia implements Serializable {
     private String nombre;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "materia")
     private Collection<Examen> examenCollection;
+    // Equipo de cátedra: lado inverso de la relación N:M con Docente
+    @ManyToMany(mappedBy = "materiaCollection")
+    private Collection<Docente> docenteCollection;
 
     public Materia() {
     }
@@ -72,6 +76,14 @@ public class Materia implements Serializable {
 
     public void setExamenCollection(Collection<Examen> examenCollection) {
         this.examenCollection = examenCollection;
+    }
+
+    public Collection<Docente> getDocenteCollection() {
+        return docenteCollection;
+    }
+
+    public void setDocenteCollection(Collection<Docente> docenteCollection) {
+        this.docenteCollection = docenteCollection;
     }
 
     @Override
