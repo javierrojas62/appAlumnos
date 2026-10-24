@@ -1,0 +1,15 @@
+entidad/Examen.class
+sesion/MateriaFacade.class
+sesion/CarreraFacade.class
+com/mycompany/appalumnos/JakartaRestConfiguration.class
+com/mycompany/appalumnos/resources/JakartaEE11Resource.class
+entidad/Materia.class
+sesion/AlumnoFacade.class
+controlador/Manejador.class
+sesion/FacultadFacade.class
+sesion/ExamenFacade.class
+sesion/AbstractFacade.class
+entidad/ExamenPK.class
+entidad/Alumno.class
+entidad/Carrera.class
+entidad/Facultad.class
